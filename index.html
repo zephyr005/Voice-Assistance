@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text to Speech Demo</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <section>
+        <!-- heading -->
+        <h1>The Voicenator 5000</h1>
+        <br>
+
+        <!-- voice selector -->
+        <select id="voice-selector"></select>
+
+        <!-- rate and apitch raiser -->
+        <div class="container">
+            <label for="rate">Rate:</label>
+            <input type="range" id="rate" min="0.5" max="2" step="0.1" value="1">
+            <br>
+            <label for="pitch">Pitch:</label>
+            <input type="range" id="pitch" min="0" max="2" step="0.1" value="1">
+        </div>
+        <br>
+        <!-- text area filed  -->
+        <textarea id="text-to-speak" placeholder="Enter text to speak"></textarea>
+        <br>
+
+        <!-- buttons fileds -->
+        <button id="start-btn">Speak</button>
+        <button id="stop-btn">Stop!</button>
+
+
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
